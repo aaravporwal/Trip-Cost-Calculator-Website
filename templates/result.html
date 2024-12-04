@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Total Trip Cost</title>
+</head>
+<body>
+    <h1>Total Trip Cost</h1>
+    <p>The total cost of the trip will be: <strong>₹{{ '{:.2f}'.format(total_cost) }}</strong></p>
+    <p>Have a Safe Journey!</p>
+    <a href="/">Back to the Calculator</a>
+</body>
+</html>
